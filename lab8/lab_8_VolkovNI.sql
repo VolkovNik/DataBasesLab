@@ -1,4 +1,4 @@
-use lab
+use master
 go
 
 IF DB_ID ('lab8') IS NOT NULL
@@ -7,10 +7,10 @@ GO
 
 CREATE DATABASE lab8
 	ON (NAME = lab8_dat, FILENAME = 
-		'D:\data\lab8dat.mdf',
+		'D:\labs-data\lab8dat.mdf',
 		SIZE = 10, MAXSIZE = UNLIMITED, FILEGROWTH = 5 %)
 	LOG ON (NAME = lab8_log, FILENAME = 
-		'D:\data\lab8log.ldf',
+		'D:\labs-data\lab8log.ldf',
 		SIZE = 5MB, MAXSIZE = 25MB, FILEGROWTH = 5MB);
 GO
 
